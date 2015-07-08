@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="Helper/Chart.js"></script>
+<script src="Helper/angular-chart.min.js"></script>
+<!--<script src="helper/angular-chart.js"></script>-->
+<head>
+    <title></title>
+    <link rel="stylesheet" href="helper/angular-chart.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body ng-app="Infographics">
+
+    <div ng-controller="LineChart">
+        <canvas id="line" class="chart chart-line" data="data"
+                labels="labels" legend="true" series="series"
+                click="onClick"></canvas>
+
+        <h3>Data</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Series</th>
+                    <th>January</th>
+                    <th>Febraury</th>
+                    <th>March</th>
+                    <th>April</th>
+                    <th>May</th>
+                    <th>June</th>
+                    <th>July</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="A in tableDataA">
+                    <td>{{A.series}}</td>
+                    <td>{{A.january}}</td>
+                    <td>{{A.february}}</td>
+                    <td>{{A.march}}</td>
+                    <td>{{A.april}}</td>
+                    <td>{{A.may}}</td>
+                    <td>{{A.june}}</td>
+                    <td>{{A.july}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div ng-controller="BarChart">
+        <canvas id="bar" class="chart chart-bar" data="data"
+                labels="labels"></canvas>
+    </div>
+
+    <div ng-controller="DoughnutChart">
+        <canvas id="doughnut" class="chart chart-doughnut" data="data"
+                labels="labels"></canvas>
+    </div>
+
+    <div ng-controller="PieChart">
+        <canvas id="pie" class="chart chart-pie" data="data"
+                labels="labels"></canvas> 
+    </div>
+
+    <div ng-controller="RadarChart">
+        <canvas id="radar" class="chart chart-radar" data="data"
+                labels="labels"></canvas> 
+    </div>
+
+    <div ng-controller="PolarAreaChart">
+        <canvas id="polar-area" class="chart chart-polar-area" data="data"
+                labels="labels"></canvas> 
+    </div>
+
+    <div ng-controller="DynamicChart">
+        <canvas id="base" class="chart-base" chart-type="type" data="data"
+                labels="labels" legend="true"></canvas>
+        <button type="button" class="btn btn-info" ng-click="toggle()">Toggle</button> 
+    </div>
+
+    <script src="Helper/Infographics.js"></script>
+</body>
+</html>
