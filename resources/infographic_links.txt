@@ -2,7 +2,7 @@
 
 
 ## Personal infographic creator - kind of like a visual resume, could be used to show the profile of a single person/ more?
-## Awaiting information about copyright and confidentiality
+## They hold the copyright on the design template - so I'm guessing we could add data to it after the design is created if necessary
 http://vizualize.me
 
 ## Simply awesome - just have a look, I wonder what we could do with this. 
