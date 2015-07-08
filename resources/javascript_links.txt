@@ -1,0 +1,21 @@
+###Please use this file to include any relevant javascript links/libraries - and if possible please include a comment about them
+
+
+
+#### Not looked at yet - awaiting comment
+http://www.zingchart.com 
+
+## Good use of single line drawing - not sure how easy/hard it will be to do vertical as well as horizontal
+## Good  visual examples - and lots of exmaple code to work with
+http://bl.ocks.org/benjchristensen/1148374
+
+## Looks highly customisable, not sure if it's better than the previous one tho
+https://github.com/bluejamesbond/Lyne.js/tree/master
+
+## Very popular Js library for drawing 
+http://raphaeljs.com/
+
+## Path transition explanations and examples- goes well with the benjchristensen link
+http://bost.ocks.org/mike/path/
+
+
