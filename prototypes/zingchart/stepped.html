@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello ZingChart World</title>
+<script src="http://cdn.zingchart.com/zingchart.min.js"></script>
+<script>
+var chartData={
+  "type": "line",
+  "plot": {
+    "animation":{
+        "delay":10,
+        "effect":"1",
+        "speed":"2000",
+        "method":"5",
+        "sequence":"ANIMATION_BY_NODE",
+        "attributes":{
+               }
+            },
+    // "aspect":"stepped",
+    // "step-start":"before"
+        },
+  "series": [
+    // { "values": [0,5,10,15 ] },
+    // { "values": [28, 57, 43, 56, 78, 99 ] },
+    { "values": [0,0,0,0,50]},
+    { "values": [10,10,20,20,30,30]}  
+  ]
+  
+};
+window.onload=function(){
+  zingchart.render({
+    id:'chartDiv',
+    height:400,
+    width:600,
+    data:chartData
+  });
+};
+</script>
+
+</head>
+<body>
+<div id='chartDiv'></div>
+</body>
+</html>
