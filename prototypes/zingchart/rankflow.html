@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello ZingChart World</title>
+<script src="http://cdn.zingchart.com/zingchart.min.js"></script>
+<script>
+var chartData={
+  "type":"rankflow",
+            "scale-x":{
+                "labels":["ASSOCIATE DEV","LEAD DEV","PRINCIPAL","MANAGER","DIRECTOR", "VP", "COO", "CEO"],
+                "values":["ASSOCIATE DEV","LEAD DEV","PRINCIPAL","MANAGER","DIRECTOR", "VP", "COO", "CEO"]
+            },
+            "series":[
+                {
+                    "text":"Michael Hunt",
+                    "ranks":[1,2,1,2,1],
+                    "rank":1
+                },
+                {
+                    "text":"Richard Kopf",
+                    "ranks":[2,1,2,1,2],
+                    "rank":2
+                },  
+                {
+                	"text":"Jenna Tolls",
+                	"ranks":[3,3,3,3,3],
+                	"rank":3
+                }  
+               ]
+        
+    
+  
+};
+
+window.onload=function(){
+  zingchart.render({
+    id:'chartDiv',
+    height:900,
+    width:1600,
+    data:chartData
+  });
+};
+</script>
+
+</head>
+<body>
+<div id='chartDiv'></div>
+</body>
+</html>
+
+
+
