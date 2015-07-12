@@ -2,7 +2,7 @@
 
 
 
-#### Not looked at yet - awaiting comment
+#### Turned out to be great!! Check the examples in the protoype folder
 http://www.zingchart.com 
 
 ## Good use of single line drawing - not sure how easy/hard it will be to do vertical as well as horizontal
