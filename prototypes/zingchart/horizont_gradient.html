@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello ZingChart World</title>
+<script src="http://cdn.zingchart.com/zingchart.min.js"></script>
+<script>
+var chartData={
+    "type": "hwaterfall",
+    "background-color":"#3E3E3E",
+    "title":{
+        "text":"CAREER PROGRESSION",
+        "background-color":"none",
+        "color":"#CCCCCC",
+        "font-weight":"none",
+        "font-size":16,
+        "margin-top":10
+        },
+    "plot":{
+        "bar-width":24
+        },
+    "plotarea":{
+        "background-color":"#303030",
+        "margin-left":"18%"
+        },
+    "scale-x":{
+        "guide":{
+            "visible":false
+            },
+        "line-color":"#646464",
+        "tick":{
+            "line-color":"#646464"
+            },
+        "item":{
+            "color":"#CCCCCC"
+            },
+        "mirrored":true,
+        "labels":["BATMAN", "KING", "CEO","CTO","COO","VP","Manager","Principal","Lead Dev","Associate"]
+        },
+        "scale-y":{
+            "thousands-separator":",",
+            "format":"$%v",
+            "label":{
+                "color":"#CCCCCC",
+                "text":"(time)",
+                "font-weight":"none"
+                },
+            "guide":{
+                "line-color":"#646464",
+                "alpha":0.7
+            },
+            "line-color":"#646464",
+            "tick":{
+                "line-color":"#646464"
+                },
+                "item":{
+                    "color":"#CCCCCC"
+                    }
+            },
+    "options":{
+        "positive":{
+            "background-color":"#9EBC47 #68821D",
+            "fill-angle":90,
+            "shadow-color":"#333",
+            "shadow":true
+            },
+        "negative":{
+            "background-color":"#B8628F #7A1047",
+            "fill-angle":180,
+            "shadow-color":"#333",
+            "shadow":true
+            },
+        "intermediate":{
+            "background-color":"#68C3E7 #1E89B8",
+            "fill-angle":90,
+            "shadow-color":"#333",
+            "shadow":true
+            },
+        "final":{
+            "background-color":"#8D8D8D #444444",
+            "fill-angle":90,
+            "shadow-color":"#333",
+            "shadow":true
+            },
+            "line":{
+                "line-style":"solid",
+                "line-color":"#646464"
+                }
+        },
+    "series": [
+        {
+            "values": [
+                4000,
+                -1000,
+                "SUM",
+                -500,
+                -200,
+                700,
+                -400,
+                -100,
+                -200,
+                "SUM"
+            ]
+        }
+    ]
+};
+
+window.onload=function(){
+  zingchart.render({
+    id:'chartDiv',
+    height:400,
+    width:600,
+    data:chartData
+  });
+};
+</script>
+
+</head>
+<body>
+<div id='chartDiv'></div>
+</body>
+</html>
+
+
+
+
