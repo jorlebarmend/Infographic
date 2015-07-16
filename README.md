@@ -8,3 +8,7 @@ RBI - infographic repo to share work
 12 July - Added zingchart exmaple - Stepped, horizontal gradient, and rankflow. 
 
 please note - the auto inforgraphic generators may need to be checked to see who owns the data after they are used
+
+16 July - Added maps examples based on amcharts maps
+	- 1 example with all locations starting from London
+	- 1 example with 2 random journeys 					
